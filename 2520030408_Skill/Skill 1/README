@@ -1,0 +1,4 @@
+This experiment focuses on setting up a Linux development environment and understanding basic Linux process management.
+Ubuntu Linux was configured with GCC, Git, Make, and system-call tracing tools.
+A Git repository and project structure were created, followed by compilation of a simple C program using GCC and Make.
+The experiment also demonstrates process abstraction using fork(), process replacement using the exec() family of system calls, parent-child process relationships, process-tree inspection using ps, pstree, and /proc, and system-call tracing using strace.
