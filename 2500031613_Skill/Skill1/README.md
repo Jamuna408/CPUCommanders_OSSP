@@ -11,5 +11,7 @@ Makefile – Compiles the program using make
 Commands
 
 gcc fork.c
+
 ./a.out
+
 make
