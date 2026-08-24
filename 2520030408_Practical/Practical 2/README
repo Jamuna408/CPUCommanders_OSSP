@@ -1,1 +1,6 @@
-
+When a program executes a system call such as open(), read(), write(), or close(), control temporarily moves from user space to kernel space. The user program cannot directly access hardware or perform protected operations, so it requests the operating system kernel to perform them.
+The transition happens as follows:
+User Space → System Call → Kernel Space → Kernel Performs Operation → Return to User Space
+For example, when read() is called, the program in user space requests the kernel to read data from a file. The CPU switches to kernel mode, and the kernel performs the file-reading operation. After completing the operation, the kernel returns the result to the program and control goes back to user space.
+Similarly, write() transfers data from the user-space buffer to the kernel, where the kernel writes it to the required file or device. After the operation is completed, control returns to the user program.
+Thus, user space runs normal application code, while kernel space handles protected operations such as file access, memory management, and hardware interaction.
