@@ -1,1 +1,6 @@
-
+The experiment was performed to observe process state transitions in Linux, including Ready, Running, Waiting, and Terminated states, using monitoring tools such as ps, top, and /proc.
+A process was created using the sleep 30 & command, and its process ID and current state were checked using the ps command.
+he top command was used to continuously monitor the process, while /proc/PID/status was used to view detailed information about the process.
+During execution, the process moves to the Ready state while waiting for CPU allocation, then enters the Running state when selected by the CPU scheduler.
+When the process waits for an event or resource, it enters the Waiting state, and after completing its execution, it reaches the Terminated state.
+Thus, the experiment successfully demonstrated how Linux processes transition between different states and how these states can be monitored using ps, top, and /proc.
