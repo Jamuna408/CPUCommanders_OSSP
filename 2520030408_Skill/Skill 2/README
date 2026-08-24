@@ -1,0 +1,4 @@
+This experiment focuses on creating a basic interactive command-line input loop using C in Ubuntu Linux.
+The program displays a prompt, reads input from the user, stores the entered characters in an input buffer, processes the Enter key, handles empty input and exit conditions, and supports multi-character commands. 
+User interaction was tested with different inputs such as single words, spaces, and commands, while the `exit` command was used to terminate the program. 
+The experiment demonstrates the basic working of an interactive shell-like input system.
