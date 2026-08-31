@@ -1,1 +1,52 @@
-
+Linux as an Operating System
+Linux acts as a bridge between computer hardware and application software.
+It manages hardware resources and provides services to applications.
+System Information – uname
+The uname command provides basic information about the Linux system.
+It displays details such as the kernel name, kernel version, and system architecture.
+CPU Information – lscpu
+The lscpu command displays information about the processor.
+It shows the CPU architecture, number of CPUs, cores, and threads.
+Linux uses this information to manage and schedule processes.
+Storage Management – lsblk
+The lsblk command displays connected storage devices.
+It provides details such as disk names, partitions, sizes, and mount points.
+Linux manages these devices using block devices and filesystems.
+Process Management – ps
+The ps command displays currently running processes.
+It provides information such as PID, CPU usage, memory usage, and process state.
+This demonstrates how Linux manages multiple processes.
+Real-Time Monitoring – top
+The top command continuously monitors system activity.
+It displays CPU utilization, memory usage, system load, and active processes.
+It helps users understand how system resources are being utilized.
+Memory Abstraction
+Linux provides virtual memory to applications.
+Programs do not need to directly control or manage physical RAM.
+The kernel handles memory allocation and management.
+Storage Abstraction
+Applications access storage through files and directories.
+They do not need to directly access physical disk sectors.
+This makes storage management easier and safer.
+Device Management
+Linux manages input and output devices through device drivers.
+Examples include keyboards, USB devices, displays, and network devices.
+Device drivers allow applications to communicate with hardware.
+Role of the Linux Kernel
+The kernel is responsible for managing important system resources.
+It controls CPU, memory, storage, processes, and I/O devices.
+It provides a standard interface between applications and hardware.
+Importance of Linux Commands
+uname → Provides system and kernel information.
+lscpu → Provides CPU and processor details.
+lsblk → Shows storage devices and partitions.
+ps → Displays running processes.
+top → Provides real-time resource monitoring.
+Overall Function
+Linux hides the complexity of hardware from applications.
+It allows multiple programs to share resources efficiently.
+It provides security, resource management, and convenient access to hardware.
+Conclusion
+Linux works as both a resource manager and an abstraction layer.
+It connects application software with computer hardware.
+Commands such as uname, lscpu, lsblk, ps, and top help users observe how Linux manages the system.
