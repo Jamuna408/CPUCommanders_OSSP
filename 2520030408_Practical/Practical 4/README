@@ -1,0 +1,31 @@
+Process Creation and Process Synchronization using fork(), wait() and waitpid()
+
+To understand process creation using fork() and process synchronization using wait() and waitpid() system calls.
+
+## Program 1
+This program creates three child processes using fork().
+The parent process uses wait() to wait for any child process to complete.
+It uses waitpid() to wait for a specific child process.
+Finally, the parent waits for all child processes to complete.
+
+## Program 2
+This program demonstrates the creation of a parent and child process using fork().
+The child process prints its process ID and terminates using exit().
+The parent process prints its process ID, waits for 30 seconds, and then completes.
+
+## System Calls Used
+- fork() – Creates a new child process.
+- getpid() – Returns the process ID.
+- wait() – Waits for a child process to complete.
+- waitpid() – Waits for a specific child process.
+- sleep() – Suspends the process for a specified time.
+- exit() – Terminates the process.
+
+## Compilation
+gcc practical4.c -o practical4
+
+## Execution
+./practical4
+
+## Conclusion
+The programs demonstrate process creation, parent-child relationships, and process synchronization using fork(), wait(), and waitpid().
