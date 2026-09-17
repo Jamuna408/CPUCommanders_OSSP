@@ -1,0 +1,62 @@
+# Producer-Consumer Using Pipe
+
+## Title
+Producer-Consumer Communication using Pipe and fork()
+
+## Objective
+To demonstrate inter-process communication (IPC) between a parent process and a child process using a pipe.
+
+## Description
+This program creates a pipe using the pipe() system call and then creates a child process using fork().
+
+The parent process acts as the Producer.
+The child process acts as the Consumer.
+
+The Producer generates five values:
+10, 20, 30, 40, and 50
+
+These values are written into the pipe by the Producer.
+The Consumer reads the values from the pipe and displays them.
+
+## System Calls Used
+- pipe() – Creates a communication channel between processes.
+- fork() – Creates a child process.
+- write() – Writes data into the pipe.
+- read() – Reads data from the pipe.
+- close() – Closes the unused/read/write end of the pipe.
+- getpid() – Displays the process ID.
+
+## Working
+1. A pipe is created using pipe(fd).
+2. fork() creates a child process.
+3. The child process acts as the Consumer.
+4. The Consumer closes the writing end of the pipe.
+5. The Consumer reads five values from the pipe.
+6. The parent process acts as the Producer.
+7. The Producer closes the reading end of the pipe.
+8. The Producer generates values from 10 to 50.
+9. The Producer writes the values into the pipe.
+10. The Consumer reads and displays the values.
+
+## Compilation
+gcc practical.c -o practical
+
+## Execution
+./practical
+
+## Expected Output
+Producer <PID>
+Produced 10
+Produced 20
+Produced 30
+Produced 40
+Produced 50
+Consumer <PID>
+Consumed 10
+Consumed 20
+Consumed 30
+Consumed 40
+Consumed 50
+
+## Conclusion
+The program demonstrates inter-process communication between a parent and child process using a pipe, where the parent produces data and the child consumes the data.
