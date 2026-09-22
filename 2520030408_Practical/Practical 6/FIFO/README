@@ -1,0 +1,8 @@
+Client-Server Application Using Named Pipes (FIFO)
+
+This project demonstrates communication between a client and server using Named Pipes (FIFO).
+The client sends messages to the server through the FIFO.
+The server receives and displays the messages.
+Multiple clients can communicate with the same server.
+The server processes the messages sequentially.
+This project demonstrates basic Inter-Process Communication (IPC) in Linux.
