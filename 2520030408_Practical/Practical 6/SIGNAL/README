@@ -1,0 +1,6 @@
+This project demonstrates POSIX signal handling in Linux.
+The program handles SIGINT, SIGTERM, and SIGUSR1.
+A signal handler function is used to respond to the received signals.
+Signals demonstrate asynchronous event handling in a running process.
+The program displays a message whenever a signal is received.
+This project helps understand how processes handle signals in Linux.
